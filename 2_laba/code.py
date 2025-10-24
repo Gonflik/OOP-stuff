@@ -63,7 +63,7 @@ print(f"The coin landed on: {coin}")
 if coin == c_inpt:
    print("You it right!")
 else:
-   print("You got it wrong!")
+   print("You got it wrong or invalid input!")
 
 ################################################################
 
@@ -78,3 +78,18 @@ except ValueError:
     print("Error: Invalid input.")
 finally:
     print("Draniksigma.")
+
+#################################################################
+
+with open("testfile.md", "w") as file:
+   file.write("# Loremipsum\n")
+   file.write("## Dolorsitamet\n")
+   file.write("### Consecteturadipiscingelit\n")
+with open("testfile.md", "r") as file:
+   content = file.read()
+   print(content)
+
+################################################################
+
+to_lambda = lambda name,swaglvl: print(f"Their name is {name} and their swag level is {swaglvl}")
+to_lambda("Dranik", 999)
