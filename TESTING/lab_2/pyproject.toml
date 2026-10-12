@@ -1,0 +1,29 @@
+[project]
+name = "lab-2"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "danik322",email = "danylobucharov@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+package-mode = false
+
+[tool.pytest.ini_options]
+markers = [
+    "unit: швидкі юніт-тести",
+]
+
+[dependency-groups]
+dev = [
+    "pytest (>=9.1.1,<10.0.0)"
+]
