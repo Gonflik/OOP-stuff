@@ -1,0 +1,29 @@
+name: Manual workflow
+
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        description: "Ім'я виконавця"
+        required: false
+        default: "Executer"
+  schedule:
+    - cron: '0 14 * * 3'
+
+jobs:
+  first_job:
+    name: Run first Job
+    runs-on: ubuntu-latest
+    steps:
+      - name: First
+        run: echo "First"
+      - name: Send greeting
+        if: github.event.inputs.name != 'Executer'
+        run: echo "Hello ${{ github.event.inputs.name }}"
+
+  second_job:
+    name: Run Second Job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Second
+        run: echo "Second"
