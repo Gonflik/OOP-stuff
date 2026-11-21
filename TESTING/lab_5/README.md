@@ -1,0 +1,2 @@
+[![Manual workflow](https://github.com/Gonflik/OOP-stuff/actions/workflows/manual.yml/badge.svg)](https://github.com/Gonflik/OOP-stuff/actions/workflows/manual.yml)
+[![laba5_dranik](https://github.com/Gonflik/OOP-stuff/actions/workflows/python-app.yml/badge.svg)](https://github.com/Gonflik/OOP-stuff/actions/workflows/python-app.yml)
